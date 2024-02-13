@@ -5,12 +5,12 @@ const USERNAME = 'root';
 const PASSWORD = 'root';
 const DATABASE = 'hillel';
 
-function generatorFetch(PDOStatement $stmt): Generator // робимо генератор для читання з бази
-{
-    while ($entity = $stmt->fetch(PDO::FETCH_OBJ)){
-        yield $entity;
-    }
-}
+//function generatorFetch(PDOStatement $stmt): Generator
+//{
+//    while ($entity = $stmt->fetch(PDO::FETCH_OBJ)){
+//        yield $entity;
+//    }
+//}
 
 try {
     $dsn = "mysql:host=mysql;port=3306;dbname=" . DATABASE . ";charset=utf8mb4";
